@@ -252,11 +252,11 @@ window.changeCam = (mode, label) => {
 };
 
 const mtlLoader = new MTLLoader();
-mtlLoader.load('Battlefield/Timechamber.mtl', (materials) => {
+mtlLoader.load('Battlefield/TimeChamber.mtl', (materials) => {
     materials.preload();
     const objLoader = new OBJLoader();
     objLoader.setMaterials(materials);
-    objLoader.load('Battlefield/Timechamber.obj', (obj) => {
+    objLoader.load('Battlefield/TimeChamber.obj', (obj) => {
         scene.add(obj);
         document.getElementById('loading-screen').style.display = 'none';
     }, undefined, () => {
@@ -956,4 +956,5 @@ animate();
 </script>
 </body>
 </html>
+
 
